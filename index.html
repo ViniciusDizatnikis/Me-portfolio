@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinicius Dizatnikis</title>
+
+    <link rel="stylesheet" href="./app/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-div">
+
+            <!-- Logo -->
+            <a class="nav-logo" href="#sobre">VD</a>
+
+            <!-- navegação no PC -->
+            <nav class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-controls">
+
+
+                <!-- Botão de tema  -->
+                <div class="theme-toggle">
+                    <span>☀️</span>
+                    <div id="buttonTheme">
+                        <div></div>
+                    </div>
+                    <span>🌙</span>
+                </div>
+
+
+                <!-- Botão hambúrguer -->
+                <button id="hamburger" class="hamburger" aria-label="Abrir menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Celular -->
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Sobre -->
+        <section id="sobre">
+            <div class="container">
+
+                <div class="hero-grid">
+
+                    <!-- Avatar -->
+                    <div class="monitor">
+                        <div class="hero-avatar-wrap fade-up">
+                            <img src="assets/img/me/me.png" class="hero-avatar" />
+                        </div>
+                        <div class="monitor-stand"></div>
+                        <div class="monitor-base"></div>
+                    </div>
+
+
+                    <!-- Texto de apresentação -->
+                    <div class="hero-text fade-up-2">
+                        <p class="greeting">Olá, eu sou</p>
+                        <h1>Vinicius<br>Dizatnikis</h1>
+                        <p class="tagline">
+                            Estudante de Ciência da Computação, com 19 anos, sempre em busca de aprimorar meus
+                            conhecimentos em tecnologia, com foco em fundamentos de programação, design e resolução
+                            criativa de problemas.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Formação -->
+        <section id="formacao">
+            <div class="container">
+
+                <h2 class="section-title">Form<span>ação</span></h2>
+                <div class="section-divider"></div>
+
+                <!-- Timeline de formação -->
+                <div class="timeline fade-up">
+
+                    <div class="timeline-item">
+                        <h3>Bacharelado em Ciência da Computação</h3>
+                        <p class="inst">UNINTER — Centro Universitário Internacional</p>
+                        <p class="period">2024 – 2026 (em andamento)</p>
+                        <p>
+                            Graduação com foco em desenvolvimento web, estruturas de dados e engenharia de software,
+                            aplicando conceitos em projetos práticos.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Ensino Médio Técnico</h3>
+                        <p class="inst">Colégio Estadual Miguel Franco Filho</p>
+                        <p class="period">2022 – 2024</p>
+                        <p>
+                            Formação integrada ao ensino médio com foco em lógica de programação,
+                            desenvolvimento web e banco de dados.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Cursos e certificações -->
+                <h3 class="certificates-title">
+                    Cursos &amp; Certificações
+                </h3>
+
+                <div class="certificates-grid">
+
+                    <div class="card fade-up">
+                        <span class="badge">Concluído</span>
+                        <h3>Desenvolvimento <br> Back-end</h3>
+                        <p>Alura — 60h</p>
+                    </div>
+                </div>
+
+
+                <!-- Idiomas -->
+                <h3 class="idiomas-title">Idiomas</h3>
+                <div class="idiomas-grid fade-up">
+
+                    <div class="idioma-card">
+                        <div class="flag">🇧🇷</div>
+                        <div class="lang">Português</div>
+                        <div class="level">Nativo</div>
+                    </div>
+
+                    <div class="idioma-card">
+                        <div class="flag">🇺🇸</div>
+                        <div class="lang">Inglês</div>
+                        <div class="level">Básico</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projetos -->
+        <section id="portfolio">
+            <div class="container">
+
+                <h2 class="section-title">Port<span>fólio</span></h2>
+                <div class="section-divider"></div>
+
+                <div class="projects-grid">
+
+                    <!-- CARD 1 -->
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <img src="assets/img/projectLogo/youtubeDownloaderLogo.png" alt="youtubeDownloaderAPI logo">
+                        </div>
+                        <div class="thumb-wrap">
+                            <img class="project-screenshot" src="./assets/img/projects/youtubeDownloaderAPI.png"
+                                alt="Api Youtube Downloader" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <div class="card-logo-box">
+                                    <img src="assets/img/projectLogo/youtubeDownloaderLogo.png"
+                                        alt="youtubeDownloaderAPI logo">
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-title">Youtube Downloader API</div>
+                                    <div class="card-sub">API</div>
+                                </div>
+                            </div>
+                            <div class="card-desc">API de Download de vídeos do Youtube</div>
+                            <div class="card-tags">
+                                <span class="card-tag">HTML5</span>
+                                <span class="card-tag">CSS3</span>
+                                <span class="card-tag">JavaScript</span>
+                                <span class="card-tag">Python</span>
+                            </div>
+                            <div class="card-links">
+                                <a class="card-btn btn-primary disabled" href="#" target="_blank"
+                                    rel="noopener noreferrer">Ver projeto
+                                    ↗</a>
+                                <a class="card-btn btn-secondary"
+                                    href="https://github.com/ViniciusDizatnikis/Youtube_Downloader-API" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <img src="assets/img/projectLogo/rincaoSonoroLogo.png" alt="Rincão Sonoro logo">
+                        </div>
+                        <div class="thumb-wrap">
+                            <img class="project-screenshot" src="assets/img/projects/rincaoSonoro.png"
+                                alt="Rincão Sonoro projeto" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <div class="card-logo-box">
+                                    <img src="assets/img/projectLogo/rincaoSonoroLogo.png" alt="Rincão Sonoro logo">
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-title">Rincão Sonoro</div>
+                                    <div class="card-sub">Web Application</div>
+                                </div>
+                            </div>
+                            <div class="card-desc">Aplicação web para ouvir musicas Gaúchas baseado no Spotify</div>
+                            <div class="card-tags">
+                                <span class="card-tag">React</span>
+                            </div>
+                            <div class="card-links">
+                                <a class="card-btn btn-primary" href="https://rincao-sonoro.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer">Ver projeto
+                                    ↗</a>
+                                <a class="card-btn btn-secondary"
+                                    href="https://github.com/ViniciusDizatnikis/Rincao-Sonoro" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <img src="assets/img/projectLogo/rincaoSonoroLogo.png" alt="Rincão Sonoro logo">
+                        </div>
+                        <div class="thumb-wrap">
+                            <img class="project-screenshot" src="assets/img/projects/apiRincaoSonoro.png"
+                                alt="API Rincão Sonoro projeto" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <div class="card-logo-box">
+                                    <img src="assets/img/projectLogo/rincaoSonoroLogo.png" alt="Rincão Sonoro logo">
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-title"> API Rincão Sonoro</div>
+                                    <div class="card-sub">API</div>
+                                </div>
+                            </div>
+                            <div class="card-desc">Api de Musicas Gaúchas</div>
+                            <div class="card-tags">
+                                <span class="card-tag">JavaScript</span>
+                                <span class="card-tag">mongo db</span>
+                                <span class="card-tag">prisma</span>
+                                <span class="card-tag">HTML5</span>
+                                <span class="card-tag">CSS3</span>
+                            </div>
+                            <div class="card-links">
+                                <a class="card-btn btn-primary" href="https://api-rincao-sonoro.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer">Ver projeto
+                                    ↗</a>
+                                <a class="card-btn btn-secondary"
+                                    href="https://github.com/ViniciusDizatnikis/API-Rincao-Sonoro" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="./app/js/script.js"></script>
+
+</body>
+
+</html>
