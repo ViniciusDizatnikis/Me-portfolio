@@ -44,6 +44,10 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    pointer-events: none;
+}
+
 
 
 /*===================== Header =====================*/
@@ -57,6 +61,7 @@ header {
     border-bottom: 1px solid var(--border);
     box-shadow: var(--shadow);
     transition: background var(--transition), border-color var(--transition);
+    width: 100vw;
 }
 
 .nav-div {
@@ -299,7 +304,6 @@ section {
 
 
 
-
 /*============================================= SEÇÃO 1 — SOBRE MIM ============================================= */
 #sobre {
     display: flex;
@@ -420,6 +424,14 @@ section {
         display: flex;
         flex-direction: column;
     }
+
+
+    .hero-avatar-wrap {
+        width: 90vw;
+        height: 28vh;
+    }
+
+
 }
 
 
@@ -1026,10 +1038,24 @@ section {
 /* Responsividade */
 @media (max-width: 768px) {
 
-    /* Contato vira coluna */
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 40px;
+        width: 90vw;
+    }
+
+    .form-group {
+        width: 95%;
+    }
+
+    .btn-submit {
+        width: 95%;
+    }
+
+    .contact-item .value {
+        font-weight: 500;
+        font-size: .8rem;
+        color: var(--text);
     }
 }
 
