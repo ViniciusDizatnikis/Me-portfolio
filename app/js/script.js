@@ -19,10 +19,13 @@ function toggleBackgroundMonitor() {
 }
 
 
-// Verifica o tema salvo no navegador
-if (localStorage.getItem('theme') === 'dark') {
-  body.classList.add('dark');
-}
+// Preferência do sistema (claro/escuro)
+const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const savedTheme = localStorage.getItem('theme');
+
+const startDark = savedTheme ? savedTheme === 'dark' : systemDarkQuery.matches;
+
+body.classList.toggle('dark', startDark);
 
 
 toggleBackgroundMonitor();
@@ -110,6 +113,43 @@ sections.forEach(function (section) {
 
 
 
+
+
+
+// Seletor Profissional / Acadêmica da seção Formação
+const tabsFormacao = document.querySelector('.formacao-tabs');
+
+if (tabsFormacao) {
+  const tabButtons = Array.from(tabsFormacao.querySelectorAll('.tab-btn'));
+
+  function ativarTab(button) {
+    tabButtons.forEach(btn => {
+      const ativo = btn === button;
+      const painel = document.getElementById(btn.getAttribute('aria-controls'));
+
+      btn.classList.toggle('active', ativo);
+      btn.setAttribute('aria-selected', ativo);
+      btn.tabIndex = ativo ? 0 : -1;
+      painel.classList.toggle('active', ativo);
+      painel.hidden = !ativo;
+    });
+
+    tabsFormacao.classList.toggle('academica', button.id === 'tab-academica');
+  }
+
+  tabButtons.forEach((btn, i) => {
+    btn.addEventListener('click', () => ativarTab(btn));
+
+    // Troca com as setas do teclado
+    btn.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const passo = e.key === 'ArrowRight' ? 1 : -1;
+      const proximo = tabButtons[(i + passo + tabButtons.length) % tabButtons.length];
+      ativarTab(proximo);
+      proximo.focus();
+    });
+  });
+}
 
 
 
